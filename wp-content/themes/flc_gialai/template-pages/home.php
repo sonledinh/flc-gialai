@@ -149,171 +149,37 @@
                 </div>
                 <div class="swiper-container" id="slide_popup">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">
+                        <?php while ( has_sub_field('content_kv' )) : ?>
+                            <div class="swiper-slide">
                             <div class="content_slide">
-                                <div class="img" style="background-image: url('<?php echo __BASE_URL__ ?>/images/beachbar.jpg')"></div>
-                                <div class="title">Trung tâm thương mại</div> <!-- Quán bar bên bờ biển với các loại beer hảo hạng từ khắp nơi trên thế giới cùng những bữa tiệc âm nhạc cuồng nhiệt sẽ mang tới một không gian giải trí sôi động và khác biệt -->
+                                <div class="img" style="background-image: url('<?php echo get_sub_field('avar_kv_item')['url'] ?>"></div>
+                                <div class="title"><?php the_sub_field('title_kv_item') ?></div> <?php the_sub_field('sort_kv_item') ?>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="content_slide">
-                                <div class="img" style="background-image: url('<?php echo __BASE_URL__ ?>/images/oceanbar.jpg')"></div>
-                                <div class="title">Trường học</div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="content_slide">
-                                <div class="img" style="background-image: url('<?php echo __BASE_URL__ ?>/images/beach.jpg')"></div>
-                                <div class="title">Bãi bãi đỗ xe thông minh</div> <!-- Hệ thống nhà nghỉ nổi tại FLC Quang Binh Beach & Golf Resort sẽ mang đến cho cư dân và du khách những trải nghiệm thú vị đến từ những ngôi nhà nhỏ đủ màu sắc nằm cạnh bãi biển. <br> Ở đó, bạn sẽ rời xa sự ồn ào, náo nhiệt, để tận hưởng bầu không khí của biển căng tràn lồng ngực và ngắm nhìn từng lớp sóng như muôn vàn viên ngọc đang lăn vào bờ ngân lên những âm thanh dào dạt, tràn sức sống. -->
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="content_slide">
-                                <div class="img" style="background-image: url('<?php echo __BASE_URL__ ?>/images/sangolf.jpg')"></div>
-                                <div class="title">Bãi bãi đỗ xe thông minh</div> <!-- Trên mảnh đất của Vị Đại tướng huyền thoại, khi chiến tranh đã lùi xa, bằng sự kính trọng và tự hào, chúng tôi muốn tạo nên một công trình nâng tầm vị thế của dải đất miền Trung trong mắt bạn bè quốc tế. Dựa trên khuôn mẫu của tổ hợp sân Golf lớn nhất thế giới Mission Hills Golf Club, FLC Quang Binh Golf Links là tổ hợp sân golf liên hoàn 18 hố dạng Links tiêu chuẩn quốc tế lớn nhất Việt Nam. Đây đồng thời cũng là dự án hạ tầng du lịch lớn nhất của Quảng Bình và khu vực miền Trung tính đến thời điểm hiện tại Nơi sự pha trộn hoàn hảo giữa cảnh quan thiên nhiên tuyệt đẹp cùng các địa hình đa dạng tạo nên những đường Golf độc đáo, đầy thử thách và sẽ là trải nghiệm thú vị cho các Golf thủ. -->
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="content_slide">
-                                <div class="img" style="background-image: url('<?php echo __BASE_URL__ ?>/images/oceanpark.jpg')"></div>
-                                <div class="title">Tháp đồng hồ</div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="content_slide">
-                                <div class="img" style="background-image: url('<?php echo __BASE_URL__ ?>/images/sand.jpg')"></div>
-                                <div class="title">Kid Zone</div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide"> 
-                            <div class="content_slide">
-                                <div class="img" style="background-image: url('<?php echo __BASE_URL__ ?>/images/night.jpg')"></div>
-                                <div class="title">Safari Zoo</div> <!-- Night Safari đầu tiên tại Việt Nam với cảnh quan sinh thái hấp dẫn, những khu chuồng trại được thiết kế theo đặc tính sinh học của từng loài sẽ mang đến cho cư dân và du khách những trải nghiệm thú vị. <br> Nơi hiện hữu của hàng trăm cá thể động vật săn đêm quý hiếm như: Sư tử, hổ, báo, chó sói, đại bàng,... -->
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="content_slide">
-                                <div class="img" style="background-image: url('<?php echo __BASE_URL__ ?>/images/caucangben.jpg')"></div>
-                                <div class="title">Quảng trường nhạc nước</div><!--  Cầu cảng FLC Quang Binh Beach & Golf Resort sẽ là bến đỗ của những chiếc du thuyền sang trọng nhất thế giới. <br> Trong từng hơi thở của rừng cây, đồi cát và biển cả, cầu cảng FLC Quang Binh Beach & Golf Resort là điểm nhấn tô điểm cho sự quy mô và tầm cỡ của dự án. Điểm đến của những trải nghiệm nghỉ dưỡng xa hoa nhất Việt Nam. -->
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="content_slide">
-                                <div class="img" style="background-image: url('<?php echo __BASE_URL__ ?>/images/congvienlehoi.jpg')"></div>
-                                <div class="title">Vườn nội khu</div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="content_slide">
-                                <div class="img" style="background-image: url('<?php echo __BASE_URL__ ?>/images/qungtruongbien.jpg')"></div>
-                                <div class="title">Khách sạn 5*</div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="content_slide">
-                                <div class="img" style="background-image: url('<?php echo __BASE_URL__ ?>/images/congvientrungtam.jpg')"></div>
-                                <div class="title">Công viên trung tâm</div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="content_slide">
-                                <div class="img" style="background-image: url('<?php echo __BASE_URL__ ?>/images/hotinhyeu.jpg')"></div>
-                                <div class="title">Hồ tình yêu</div>
-                            </div>
-                        </div>
+                        <?php endwhile; ?>
                     </div>
                 </div>
             </div>
             <div class="content" id="content">
                 <div class="left">
-                    <div class="item" data-index="1" data-aos="zoom-in" data-aos-delay="0">
-                        <div class="img" data-aos="zoom-in" data-aos-delay="0">
-                            <div class="img_scale" style="background-image: url('<?php echo __BASE_URL__ ?>/images/beachbar.jpg')"></div>
+                    <?php 
+                        $count_item = 1;
+                        $count_delay = 1;
+                        $count_delay_img = 1;
+                    ?>
+                    <?php while ( has_sub_field('content_kv' )) : ?>
+                        <div class="item" data-index="<?php echo $count_item++ ?>" data-aos="zoom-in" data-aos-delay="<?php echo $count_delay++ ?>00">
+                            <div class="img" data-aos="zoom-in" data-aos-delay="<?php echo $count_delay_img++ ?>00">
+                                <div class="img_scale" style="background-image: url('<?php echo get_sub_field('avar_kv_item')['url'] ?>"></div>
+                            </div>
+                            <p><?php the_sub_field('title_kv_item') ?></p>
+                            <div class="i-def"><img src="<?php echo __BASE_URL__ ?>/images/def.svg" class="img-fluid" alt=""></div>
                         </div>
-                        <p>Trung tâm thương mại</p>
-                        <div class="i-def"><img src="<?php echo __BASE_URL__ ?>/images/def.svg" class="img-fluid" alt=""></div>
-                    </div>
-                    <div class="item" data-index="2" data-aos="zoom-in" data-aos-delay="100">
-                        <div class="img" data-aos="zoom-in" data-aos-delay="100">
-                            <div class="img_scale" style="background-image: url('<?php echo __BASE_URL__ ?>/images/oceanbar.jpg')"></div>
-                        </div>
-                        <p>Trường học</p>
-                        <div class="i-def"><img src="<?php echo __BASE_URL__ ?>/images/def.svg" class="img-fluid" alt=""></div>
-                    </div>
-                    <div class="item" data-index="3" data-aos="zoom-in" data-aos-delay="200">
-                        <div class="img" data-aos="zoom-in" data-aos-delay="200">
-                            <div class="img_scale" style="background-image: url('<?php echo __BASE_URL__ ?>/images/beach.jpg')"></div>
-                        </div>
-                        <p>Bãi bãi đỗ xe thông minh</p>
-                        <div class="i-def"><img src="<?php echo __BASE_URL__ ?>/images/def.svg" class="img-fluid" alt=""></div>
-                    </div>
-                    <div class="item" data-index="4" data-aos="zoom-in" data-aos-delay="300">
-                        <div class="img" data-aos="zoom-in" data-aos-delay="300">
-                            <div class="img_scale" style="background-image: url('<?php echo __BASE_URL__ ?>/images/sangolf.jpg')"></div>
-                        </div>
-                        <p>Sân Golf 36 hố</p>
-                        <div class="i-def"><img src="<?php echo __BASE_URL__ ?>/images/def.svg" class="img-fluid" alt=""></div>
-                    </div>
-                    <div class="item" data-index="5" data-aos="zoom-in" data-aos-delay="400">
-                        <div class="img" data-aos="zoom-in" data-aos-delay="400">
-                            <div class="img_scale" style="background-image: url('<?php echo __BASE_URL__ ?>/images/oceanpark.jpg')"></div>
-                        </div>
-                        <p>Kid Zone</p>
-                        <div class="i-def"><img src="<?php echo __BASE_URL__ ?>/images/def.svg" class="img-fluid" alt=""></div>
-                    </div>
-                    <div class="item" data-index="6" data-aos="zoom-in" data-aos-delay="500">
-                        <div class="img" data-aos="zoom-in" data-aos-delay="500">
-                            <div class="img_scale" style="background-image: url('<?php echo __BASE_URL__ ?>/images/home/sand.jpg')"></div>
-                        </div>
-                        <p>Kid Zone</p>
-                        <div class="i-def"><img src="<?php echo __BASE_URL__ ?>/images/def.svg" class="img-fluid" alt=""></div>
-                    </div>
-                    <div class="item" data-index="7" data-aos="zoom-in" data-aos-delay="600">
-                        <div class="img" data-aos="zoom-in" data-aos-delay="600">
-                            <div class="img_scale" style="background-image: url('<?php echo __BASE_URL__ ?>/images/night.jpg')"></div>
-                        </div>
-                        <p>Safari Zoo</p>
-                        <div class="i-def"><img src="<?php echo __BASE_URL__ ?>/images/def.svg" class="img-fluid" alt=""></div>
-                    </div>
-                    <div class="item" data-index="8" data-aos="zoom-in" data-aos-delay="700">
-                        <div class="img" data-aos="zoom-in" data-aos-delay="700">
-                            <div class="img_scale" style="background-image: url('<?php echo __BASE_URL__ ?>/images/caucangben.jpg')"></div>
-                        </div>
-                        <p>Quảng trường nhạc nước</p>
-                        <div class="i-def"><img src="<?php echo __BASE_URL__ ?>/images/def.svg" class="img-fluid" alt=""></div>
-                    </div>
-                    <div class="item" data-index="9" data-aos="zoom-in" data-aos-delay="800">
-                        <div class="img" data-aos="zoom-in" data-aos-delay="800">
-                            <div class="img_scale" style="background-image: url('<?php echo __BASE_URL__ ?>/images/congvienlehoi.jpg')"></div>
-                        </div>
-                        <p>Quảng trường nhạc nước</p>
-                        <div class="i-def"><img src="<?php echo __BASE_URL__ ?>/images/def.svg" class="img-fluid" alt=""></div>
-                    </div>
-                    <div class="item" data-index="10" data-aos="zoom-in" data-aos-delay="900">
-                        <div class="img" data-aos="zoom-in" data-aos-delay="900">
-                            <div class="img_scale" style="background-image: url('<?php echo __BASE_URL__ ?>/images/qungtruongbien.jpg')"></div>
-                        </div>
-                        <p>Khách sạn 5*</p>
-                        <div class="i-def"><img src="<?php echo __BASE_URL__ ?>/images/def.svg" class="img-fluid" alt=""></div>
-                    </div>
-                    <div class="item" data-index="11" data-aos="zoom-in" data-aos-delay="1000">
-                        <div class="img" data-aos="zoom-in" data-aos-delay="1000">
-                            <div class="img_scale" style="background-image: url('<?php echo __BASE_URL__ ?>/images/congvientrungtam.jpg')"></div>
-                        </div>
-                        <p>Công viên <br> trung tâm </p>
-                        <div class="i-def"><img src="<?php echo __BASE_URL__ ?>/images/def.svg" class="img-fluid" alt=""></div>
-                    </div>
-                    <div class="item" data-index="12" data-aos="zoom-in" data-aos-delay="1100">
-                        <div class="img" data-aos="zoom-in" data-aos-delay="1100">
-                            <div class="img_scale" style="background-image: url('<?php echo __BASE_URL__ ?>/images/hotinhyeu.jpg')"></div>
-                        </div>
-                        <p>Hồ điều hòa</p>
-                        <div class="i-def"><img src="<?php echo __BASE_URL__ ?>/images/def.svg" class="img-fluid" alt=""></div>
-                    </div>
+                    <?php endwhile; ?>
                 </div>
                 <div class="right" data-aos="fade-up">
                     <div class="web">Cùng với</div>
-                    <div class="title_sec_def" style="background-image: url('<?php echo __BASE_URL__ ?>/images/bgr_title.png')"> 50+ </div><br> tiện ích <br> đẳng cấp 5*
+                    <div class="title_sec_def" style="background-image: url('<?php echo __BASE_URL__ ?>/images/bgr_title.png')"> <?php echo the_field('title_numb') ?> </div><br> tiện ích <br> đẳng cấp 5*
                 </div>
             </div> 
         </section>
@@ -379,44 +245,42 @@
                 <img src="<?php echo __BASE_URL__ ?>/images/decor_ss7.png" alt="FLC Quảng Bình">
             </div>
             <div class="left">
-                <strong data-aos="fade-up">Giao thông</strong>
-                <p data-aos="fade-up">Các tuyến giao thông huyết mạch Bắc - Nam chạy qua dự án</p>
-                <ul data-aos="fade-up">
-                    <li>Đường Hồ Chí Minh</li>
-                    <li>19, 19D, 25, 14C</li>
-                    <li>Đường Trường Sơn Đông</li>
-                </ul>
-                <strong data-aos="fade-up">Vận tải</strong>
-                <div class="item" data-aos="fade-up">
-                    <div class="icon" data-aos="zoom-in">
-                        <img src="<?php echo __BASE_URL__ ?>/images/icon-1.png" alt="FLC Quảng Bình">
-                    </div>
-                    <div class="exp"> 14 chuyến/tuần từ Hà Nội. ( Trung bình 1h35p/chuyến )<br> 14-24 chuyến/tuần từ Hồ Chí Minh. ( Trung bình 1h10p/chuyến )</div>
-                </div>
-                <div class="item" data-aos="fade-up">
-                    <div class="icon" data-aos="zoom-in">
-                        <img src="<?php echo __BASE_URL__ ?>/images/icon-2.png" alt="FLC Quảng Bình">
-                    </div>
-                    <div class="exp"> 14 chuyến/tuần từ Hà Nội. ( Trung bình 1h35p/chuyến )<br> 14-24 chuyến/tuần từ Hồ Chí Minh. ( Trung bình 1h10p/chuyến )</div>
-                </div>
+                <?php while ( has_sub_field('gt_maps' )) : ?>
+                    <strong data-aos="fade-up"><?php the_sub_field('title_gt') ?></strong>
+                    <p data-aos="fade-up"><?php the_sub_field('sort_gt') ?></p>
+                    <ul data-aos="fade-up">
+                        <?php while ( has_sub_field('content_gt' )) : ?>
+                            <li><?php the_sub_field('item_gt') ?></li>
+                        <?php endwhile; ?>
+                    </ul>
+                <?php endwhile; ?>
+
+                <?php while ( has_sub_field('box_vantai' )) : ?>
+                    <strong data-aos="fade-up"><?php the_sub_field('title_vantai') ?></strong>
+                    <?php while ( has_sub_field('danh_sach_vantai' )) : ?>
+                        <div class="item" data-aos="fade-up">
+                            <div class="icon" data-aos="zoom-in">
+                                <img src="<?php echo get_sub_field('icon_vantai')['url'] ?>" alt="FLC Quảng Bình">
+                            </div>
+                            <div class="exp"><?php the_sub_field('item_vantai') ?></div>
+                        </div>
+                    <?php endwhile; ?>
+                <?php endwhile; ?>
                 <br>
-                <strong data-aos="fade-up">Du lịch</strong>
-                <div class="list" data-aos="fade-up">
-                    <div class="item2">
-                        <div class="icon">
-                            <strong>4.500.000</strong>
-                            <br> Người/năm
-                        </div>
-                        <div class="exp"> Lượng khách du lịch trong nước </div>
+                <?php while ( has_sub_field('box_dulich' )) : ?>
+                    <strong data-aos="fade-up"><?php the_sub_field('title_dulich') ?></strong>
+                    <div class="list" data-aos="fade-up">
+                        <?php while ( has_sub_field('danh_sach_dulich' )) : ?>
+                            <div class="item2">
+                                <div class="icon">
+                                    <strong><?php the_sub_field('numb_dulich') ?></strong>
+                                    <br> <?php the_sub_field('titlenumb_dulich') ?>
+                                </div>
+                                <div class="exp"><?php the_sub_field('desc_dulich') ?></div>
+                            </div>
+                        <?php endwhile; ?>
                     </div>
-                    <div class="item2">
-                        <div class="icon">
-                            <strong>250.000</strong>
-                            <br> Người/năm
-                        </div>
-                        <div class="exp"> Lượng khách du lịch nước ngoài </div>
-                    </div>
-                </div>
+                <?php endwhile; ?> 
             </div>
             <div class="right" data-aos="fade-left">
                 <div class="web" data-aos="fade-up">FLC GIA LAI GOLF CLUB & LUXURY RESORT</div>
@@ -427,7 +291,7 @@
         </section>
         <section class="h-lienket">
             <div class="container-fluid">
-                <div class="box-lk text-center"  data-aos="fade-up"><img src="<?php echo __BASE_URL__ ?>/images/lienket.png" class="img-fluid" alt=""></div>
+                <div class="box-lk text-center"  data-aos="fade-up"><img src="<?php echo get_field('avar_sitemap')['url'] ?>" class="img-fluid" alt=""></div>
             </div>
         </section>
         <section class="box-partner">
@@ -443,66 +307,20 @@
                             <div class="list-part">
                                 <div class="swiper-container" id="s6_part">
                                     <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <div class="item-slide">
-                                                <div class="item-partner">
-                                                    <div class="avr-par"><a href=""><img src="<?php echo __BASE_URL__ ?>/images/part-1.png" class="img-fluid" alt=""></a></div>
-                                                    <div class="info text-center">
-                                                        <h3><a href="">CITY LAND</a></h3>
-                                                        <p>Hotline: <strong>0123456789</strong></p>
-                                                        <div class="btn-part"><a href="">LIÊN HỆ</a></div>
+                                        <?php while ( has_sub_field('list_part' )) : ?>
+                                            <div class="swiper-slide">
+                                                <div class="item-slide">
+                                                    <div class="item-partner">
+                                                        <div class="avr-par"><a href=""><img src="<?php echo get_sub_field('logo_part')['url']; ?>" class="img-fluid" alt=""></a></div>
+                                                        <div class="info text-center">
+                                                            <h3><a href=""><?php the_sub_field('title_part') ?></a></h3>
+                                                            <p>Hotline: <strong><?php the_sub_field('hotline_part') ?></strong></p>
+                                                            <div class="btn-part"><a href="<?php the_sub_field('link_part') ?>">LIÊN HỆ</a></div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="item-slide">
-                                                <div class="item-partner">
-                                                    <div class="avr-par"><a href=""><img src="<?php echo __BASE_URL__ ?>/images/part-2.jpg" class="img-fluid" alt=""></a></div>
-                                                    <div class="info text-center">
-                                                        <h3><a href="">CITY LAND</a></h3>
-                                                        <p>Hotline: <strong>0123456789</strong></p>
-                                                        <div class="btn-part"><a href="">LIÊN HỆ</a></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="item-slide">
-                                                <div class="item-partner">
-                                                    <div class="avr-par"><a href=""><img src="<?php echo __BASE_URL__ ?>/images/part-3.png" class="img-fluid" alt=""></a></div>
-                                                    <div class="info text-center">
-                                                        <h3><a href="">CITY LAND</a></h3>
-                                                        <p>Hotline: <strong>0123456789</strong></p>
-                                                        <div class="btn-part"><a href="">LIÊN HỆ</a></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="item-slide">
-                                                <div class="item-partner">
-                                                    <div class="avr-par"><a href=""><img src="<?php echo __BASE_URL__ ?>/images/part-4.jpg" class="img-fluid" alt=""></a></div>
-                                                    <div class="info text-center">
-                                                        <h3><a href="">CITY LAND</a></h3>
-                                                        <p>Hotline: <strong>0123456789</strong></p>
-                                                        <div class="btn-part"><a href="">LIÊN HỆ</a></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="item-slide">
-                                                <div class="item-partner">
-                                                    <div class="avr-par"><a href=""><img src="<?php echo __BASE_URL__ ?>/images/part-5.jpg" class="img-fluid" alt=""></a></div>
-                                                    <div class="info text-center">
-                                                        <h3><a href="">CITY LAND</a></h3>
-                                                        <p>Hotline: <strong>0123456789</strong></p>
-                                                        <div class="btn-part"><a href="">LIÊN HỆ</a></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <?php endwhile; ?>
                                     </div>
                                 </div>
                             </div>
