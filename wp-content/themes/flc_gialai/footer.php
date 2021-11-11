@@ -50,13 +50,7 @@
 				<div class="col-md-5">
 					<div class="box-form-ft">
 						<h4>ĐĂNG KÝ NHẬN THÔNG TIN DỰ ÁN</h4>
-						<div class="list-form">
-							<div class="item-form-ft"><input type="text" placeholder="Họ và tên" class="txt_field"></div>
-							<div class="item-form-ft"><input type="text" placeholder="Điện thoại" class="txt_field"></div>
-							<div class="item-form-ft"><input type="text" placeholder="Email" class="txt_field"></div>
-							<div class="item-form-ft"><textarea placeholder="Nội dung"></textarea></div>
-							<div class="item-form-ft text-center"><input type="submit" value="GỬI" class="send-submit"></div>
-						</div>
+						<?php echo do_shortcode('[contact-form-7 id="7" title="Đăng ký nhận thông tin dự án"]'); ?>
 					</div>
 				</div>
 			</div>

@@ -87,52 +87,7 @@
     <section class="box-register" style="background: url('<?php echo __BASE_URL__ ?>/images/bg-form.png') no-repeat center;background-size: cover;">
         <div class="container">
             <div class="content-regis">
-                <div class="form-regis">
-                    <div class="item-form" data-aos="fade-up"><input type="text" class="txt_field" placeholder="Họ và tên"></div>
-                    <div class="item-form" data-aos="fade-up"><input type="text" class="txt_field" placeholder="Điện thoại"></div>
-                    <div class="item-form" data-aos="fade-up"><input type="text" class="txt_field" placeholder="Email"></div>
-                    <div class="item-form" data-aos="fade-up">
-                        <p>Căn hộ bạn quan tâm </p>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="col-regis">
-                                    <h3 class="text-uppercase">PHONG SƠN</h3>
-                                    <ul>
-                                        <li><input type="checkbox" id="2001"><label for="2001">Shophouse</label></li>
-                                        <li><input type="checkbox" id="2002"><label for="2002">Mini Hotel</label></li>
-                                        <li><input type="checkbox" id="2003"><label for="2003">Biệt thự</label></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="col-regis">
-                                    <h3 class="text-uppercase">Song Vũ</h3>
-                                    <ul>
-                                        <li><input type="checkbox" id="1001"><label for="1001">Biệt thự Đơn lập</label></li>
-                                        <li><input type="checkbox" id="1002"><label for="1002">Biệt thự Song lập</label></li>
-                                        <li><input type="checkbox" id="1003"><label for="1003">Shopvilla Đơn lập 2,5 tầng</label></li>
-                                        <li><input type="checkbox" id="1004"><label for="1004">Shopvilla Đơn lập 3 tầng</label></li>
-                                        <li><input type="checkbox" id="1005"><label for="1005">Shopvilla Song lập 2,5 tầng</label></li>
-                                        <li><input type="checkbox" id="1006"><label for="1006">Shopvilla Song lập 3 tầng</label></li>
-                                        <li><input type="checkbox" id="1007"><label for="1007">Liên kề</label></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="col-regis">
-                                    <h3 class="text-uppercase">Trường Vĩ</h3>
-                                    <ul>
-                                        <li><input type="checkbox" id="3001"><label for="3001">Shophouse</label></li>
-                                        <li><input type="checkbox" id="3002"><label for="3002">Mini Hotel</label></li>
-                                        <li><input type="checkbox" id="3003"><label for="3003">Biệt thự</label></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item-form" data-aos="fade-up"><input type="text" class="txt_field" placeholder="Nội dung"></div>
-                    <div class="item-form" data-aos="fade-up"><input type="submit" value="GỬI THÔNG TIN" class="btn-regis text-center"></div>
-                </div>
+                <?php echo do_shortcode('[contact-form-7 id="190" title="Đăng ký tư vấn"]'); ?>
             </div>
         </div>
     </section>
