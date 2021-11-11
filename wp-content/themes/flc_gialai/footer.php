@@ -18,34 +18,27 @@
 			<div class="row">
 				<div class="col-md-3">
 					<div class="item-fter">
-						<div class="logo"><a href=""><img src="<?php echo __BASE_URL__ ?>/images/logo.png" class="img-fluid" alt="" style="max-width: 200px;"></a></div>
-						<div class="i-logo"><img src="<?php echo __BASE_URL__ ?>/images/logo-2.png" class="img-fluid" alt="" style="max-width: 200px;"></div>
+						<div class="logo"><a href=""><img src="<?php echo get_field('logo_footer_1','option')['url'] ?>" class="img-fluid" alt="" style="max-width: 200px;"></a></div>
+						<div class="i-logo"><img src="<?php echo get_field('logo_footer_2','option')['url'] ?>" class="img-fluid" alt="" style="max-width: 200px;"></div>
 					</div>
 				</div>
 				<div class="col-md-4">
-					<div class="item-fter">
-						<h3>CÔNG TY CỔ PHẦN QUẢN LÝ VỐN & TÀI SẢN FLC HOLDING - FCA</h3>
-						<div class="info-fter">
-							<ul class="mb-0">
-								<li>
-									<div class="icon"><img src="<?php echo __BASE_URL__ ?>/images/ft-1.png" class="img-fluid" alt=""></div>
-									<span>Địa chỉ: Tầng 26 - Tòa nhà Bamboo Airways Tower, số 265 Cầu Giấy, phường Dịch Vọng, quận Cầu Giấy, Hà Nội</span>
-								</li>
-								<li>
-									<div class="icon"><img src="<?php echo __BASE_URL__ ?>/images/ft-2.png" class="img-fluid" alt=""></div>
-									<span>Phone: 088 970 6868</span>
-								</li>
-								<li>
-									<div class="icon"><img src="<?php echo __BASE_URL__ ?>/images/ft-3.png" class="img-fluid" alt=""></div>
-									<span>Email: cskh@flcholding.vn</span>
-								</li>
-								<li>
-									<div class="icon"><img src="<?php echo __BASE_URL__ ?>/images/ft-4.png" class="img-fluid" alt=""></div>
-									<span>Website: flcholding.vn</span>
-								</li>
-							</ul>
+					<?php while ( has_sub_field('content_footer','option' )) : ?>
+                    	<div class="item-fter">
+							<h3><?php the_field('title_fter','option') ?></h3>
+							<div class="info-fter">
+								<ul class="mb-0">
+									<?php while ( has_sub_field('list_fter','option' )) : ?>
+				                    	<li>
+											<div class="icon"><img src="<?php echo get_sub_field('icon_fter','option')['url'] ?>" class="img-fluid" alt=""></div>
+											<span><?php the_sub_field('text_fter','option') ?></span>
+										</li>
+									<?php endwhile; ?>
+									
+								</ul>
+							</div>
 						</div>
-					</div>
+					<?php endwhile; ?>
 				</div>
 				<div class="col-md-5">
 					<div class="box-form-ft">
@@ -61,7 +54,11 @@
 			<div class="social">
 				<ul class="list-inline mb-0">
 					<li class="list-inline-item"><span>KẾT NỐI VỚI CHÚNG TÔI</span></li>
-					<li class="list-inline-item"><img src="<?php echo __BASE_URL__ ?>/images/social.png" class="img-fluid" alt=""></li>
+					<?php while ( has_sub_field('link_social','option' )) : ?>
+                    	<?php while ( has_sub_field('danh_sach_mxh','option' )) : ?>
+	                    	<li class="list-inline-item"><a href="<?php the_sub_field('link_mxh','option') ?>"><img src="<?php echo get_sub_field('icon_mxh','option')['url'] ?>" class="img-fluid" alt=""></a></li>
+						<?php endwhile; ?>
+					<?php endwhile; ?>
 				</ul>
 			</div>
 		</div>
@@ -73,12 +70,12 @@
 	            <div class="hotline-phone-ring-circle"></div>
 	            <div class="hotline-phone-ring-circle-fill"></div> 
 	            <div class="hotline-phone-ring-img-circle">
-	                <a href="tel:0912386968" class="pps-btn-img"> <img src="<?php echo __BASE_URL__ ?>/images/quick.png" alt="Gọi điện thoại" width="50" data-lazy-src="" data-pin-no-hover="true" class="lazyloaded" data-was-processed="true">
+	                <a href="tel:<?php the_field('hotline','option') ?>" class="pps-btn-img"> <img src="<?php echo __BASE_URL__ ?>/images/quick.png" alt="Gọi điện thoại" width="50" data-lazy-src="" data-pin-no-hover="true" class="lazyloaded" data-was-processed="true">
 	                </a>
 	            </div>
 	        </div>
 	        <div class="hotline-bar">
-	            <a href="tel:088 970 6868"> <span class="text-hotline" id="call-now-1">088 970 6868</span> </a>
+	            <a href="tel:<?php the_field('hotline','option') ?>"> <span class="text-hotline" id="call-now-1"><?php the_field('hotline','option') ?></span> </a>
 	        </div>
 	    </div>
 	</div>

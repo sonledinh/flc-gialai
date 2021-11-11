@@ -12,7 +12,7 @@
 	                    </div>
 					<?php endwhile; ?>
                 </div>
-            </div>
+            </div> 
             <div class="swiper-pagination pagination_slide_def"></div>
             <div class="panigation_number">
                 <div class="cicle"></div>
